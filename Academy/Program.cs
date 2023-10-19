@@ -190,3 +190,17 @@ void AdditionGame(string message)
  
 }
 
+int[] GetDivisionNumbers()
+{
+    var random = new Random(2);
+    var firstNumber = random.Next(1, 99);
+    var secondNumber = random.Next(1, 99);
+
+
+    var result = new int[2];
+
+    result[0] = firstNumber;
+    result[1] = secondNumber;
+
+    return result;
+}
