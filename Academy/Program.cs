@@ -8,7 +8,7 @@ Menu(name);
 
 string GetName()
 {
-    Console.WriteLine("Please type your name: ");
+    Console.WriteLine("Skriv in ditt namn: ");
     var name = Console.ReadLine();
     return name;
 }
@@ -16,14 +16,14 @@ string GetName()
 void Menu(string? name)
 {
     Console.WriteLine("-------------------------------------------------");
-    Console.WriteLine($"Hello {name}. It's {date}. This is your math's game. That's great that you're working on improving yourself.");
+    Console.WriteLine($"Hej! {name}. Det är just nu: {date}. Detta är ett matematik spel.");
     Console.WriteLine("\n");
-    Console.WriteLine($@" What game would you like to play today? Choose from the options below:
+    Console.WriteLine($@" Vilket typ av spel vill du göra idag? Välj mellan valen nedanför:
 A - Addition
 S - Subtraction
 M - Multiplication
 D - Division
-Q - Quit the program");
+Q - Avsluta");
     Console.WriteLine("-------------------------------------------------");
 
     var gameSelected = Console.ReadLine();
@@ -31,20 +31,20 @@ Q - Quit the program");
     switch (gameSelected.Trim().ToLower())
     {
         case "a":
-            AdditionGame("Addition game selected");
+            AdditionGame("Addition spel vald");
             Console.Clear();
             break;
         case "s":
-            SubtractionGame("Subtraction game selected");
+            SubtractionGame("Subtraction spel vald");
             break;
         case "m":
-            MultiplicationGame("Multiplication game selected");
+            MultiplicationGame("Multiplication spel vald");
             break;
         case "d":
-            DivisionGame("Division game selected");
+            DivisionGame("Division spel vald");
             break;
         case "q":
-            Console.WriteLine("Goodbye");
+            Console.WriteLine("Hejdå");
             Environment.Exit(1);
             break;
         default:
@@ -74,15 +74,16 @@ void DivisionGame(string message)
 
         if (int.Parse(result) == firstNumber / secoundNumber)
         {
-            Console.WriteLine("Your answer was right");
+            Console.WriteLine("Ditt svar var rätt");
             score++;
         }
         else
         {
-            Console.WriteLine("Your answer was wrong");
+            Console.WriteLine("Ditt svar var fel");
         }
 
-        if (i == 4) Console.WriteLine($"Game over. Your final score is {score}");
+        if (i == 4) Console.WriteLine($"Game over. Du fick totalt {score} mycket poäng");
+        Console.ReadLine();
     }
 }
 
@@ -105,15 +106,16 @@ void MultiplicationGame(string message)
 
         if (int.Parse(result) == firstNumber * secoundNumber)
         {
-            Console.WriteLine("Your answer was right");
+            Console.WriteLine("Ditt svar var rätt");
             score++;
         }
         else
         {
-            Console.WriteLine("Your answer was wrong");
+            Console.WriteLine("Ditt svar var fel");
         }
 
-        if (i == 4) Console.WriteLine($"Game over. Your final score is {score}");
+        if (i == 4) Console.WriteLine($"Game over. Du fick totalt {score} mycket poäng");
+        Console.ReadLine();
     }
 }
 
@@ -137,15 +139,16 @@ void SubtractionGame(string message)
 
         if(int.Parse(result) == firstNumber - secoundNumber)
         {
-            Console.WriteLine("Your answer was right");
+            Console.WriteLine("Ditt svar var rätt");
             score++;
         }
         else
         {
-            Console.WriteLine("Your answer was wrong");
+            Console.WriteLine("Ditt svar var fel");
         }
 
-        if (i == 4) Console.WriteLine($"Game over. Your final score is {score}");
+        if (i == 4) Console.WriteLine($"Game over. Du fick totalt {score} mycket poäng");
+        Console.ReadLine();
     }
 }
 
@@ -168,16 +171,16 @@ void AdditionGame(string message)
 
         if (int.Parse(result) == firstNumber + secoundNumber)
         {
-            Console.WriteLine("Your answer was correct");
+            Console.WriteLine("Ditt svar var rätt");
             score++;
         }
         else
         {
-            Console.WriteLine("Your answer was wrong");
+            Console.WriteLine("Ditt svar var fel");
         }
 
-        if (i == 4) Console.WriteLine($"Game over. Your final score is {score}");
-
+        if (i == 4) Console.WriteLine($"Game over. Du fick totalt {score} mycket poäng");
+        Console.ReadLine();
 
     }
 
