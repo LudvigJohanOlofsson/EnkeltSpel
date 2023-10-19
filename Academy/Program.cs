@@ -13,6 +13,7 @@ string GetName()
     return name;
 }
 
+// Koden för Menyn
 void Menu(string? name)
 {
     Console.WriteLine("-------------------------------------------------");
@@ -54,6 +55,7 @@ Q - Avsluta");
     }
 }
 
+//kod för Division/Multi/Subtract/Addition
 void DivisionGame(string message)
 {
     Console.WriteLine(message);
