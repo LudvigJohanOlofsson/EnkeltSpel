@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Academy.Models
+﻿namespace Academy.Models
 {
-    internal class Spel
+    internal class Game
     {
+        
+        public DateTime Date { get; set; }
+        public int Score { get; set; }  
+        public string Typ { get; set; }
     }
 }

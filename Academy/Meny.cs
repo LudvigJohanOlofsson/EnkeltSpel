@@ -14,19 +14,21 @@ namespace Academy
             Console.WriteLine("-------------------------------------------------");
             Console.WriteLine($"Hej! {name}. Det är just nu: {date}. Detta är ett matematik spel.");
             Console.WriteLine("\n");
+            Console.ReadLine();
 
             bool ärSpeletPå = true;
 
             do
             {
                 Console.Clear();
-                Console.WriteLine($@" Vilket typ av spel vill du göra idag? Välj mellan valen nedanför:
-                       V - Se tidigare spel
-                       A - Addition
-                       S - Subtraction
-                       M - Multiplication
-                       D - Division
-                       Q - Avsluta");
+                Console.WriteLine($"Spelare: {name}");
+                Console.WriteLine($@"Vilket typ av spel vill du göra idag? Välj mellan valen nedanför:
+                V - Se tidigare spel
+                A - Addition
+                S - Subtraction
+                M - Multiplication
+                D - Division
+                Q - Avsluta");
                 Console.WriteLine("-------------------------------------------------");
 
                 var gameSelected = Console.ReadLine();

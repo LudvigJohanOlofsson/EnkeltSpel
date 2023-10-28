@@ -21,6 +21,22 @@ namespace Academy
                 Console.WriteLine($"{firstNumber} / {secoundNumber}");
                 var result = Console.ReadLine();
 
+                int answer;
+                bool validInput = false;
+
+                while (!validInput)
+                {
+                    if (int.TryParse(result, out answer))
+                    {
+                        validInput = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Felaktigt format. Försök igen.");
+                        result = Console.ReadLine();
+                    }
+                }
+
                 if (int.Parse(result) == firstNumber * secoundNumber)
                 {
                     Console.WriteLine("Ditt svar var rätt");
@@ -55,6 +71,22 @@ namespace Academy
 
                 Console.WriteLine($"{firstNumber} * {secoundNumber}");
                 var result = Console.ReadLine();
+
+                int answer;
+                bool validInput = false;
+
+                while (!validInput)
+                {
+                    if (int.TryParse(result, out answer))
+                    {
+                        validInput = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Felaktigt format. Försök igen.");
+                        result = Console.ReadLine();
+                    }
+                }
 
                 if (int.Parse(result) == firstNumber * secoundNumber)
                 {
@@ -91,6 +123,22 @@ namespace Academy
                 Console.WriteLine($"{firstNumber} - {secoundNumber}");
                 var result = Console.ReadLine();
 
+                int answer;
+                bool validInput = false;
+
+                while (!validInput)
+                {
+                    if (int.TryParse(result, out answer))
+                    {
+                        validInput = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Felaktigt format. Försök igen.");
+                        result = Console.ReadLine();
+                    }
+                }
+
                 if (int.Parse(result) == firstNumber - secoundNumber)
                 {
                     Console.WriteLine("Ditt svar var rätt");
@@ -125,6 +173,21 @@ namespace Academy
                 Console.WriteLine($"{firstNumber} + {secoundNumber}");
                 var result = Console.ReadLine();
 
+                int answer;
+                bool validInput = false;
+
+                while (!validInput)
+                {
+                    if (int.TryParse(result, out answer))
+                    {
+                        validInput = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Felaktigt format. Försök igen.");
+                        result = Console.ReadLine();
+                    }
+                }
                 if (int.Parse(result) == firstNumber + secoundNumber)
                 {
                     Console.WriteLine("Ditt svar var rätt");
