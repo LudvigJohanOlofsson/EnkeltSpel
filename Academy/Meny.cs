@@ -13,6 +13,7 @@ namespace Academy
         {
             Console.WriteLine("-------------------------------------------------");
             Console.WriteLine($"Hej! {name}. Det är just nu: {date}. Detta är ett matematik spel.");
+            Console.WriteLine("Tryck på valfri knapp för att komma till menyn");
             Console.WriteLine("\n");
             Console.ReadLine();
 
@@ -59,11 +60,10 @@ Q - Avsluta");
                     case "q":
                         Console.WriteLine($"Hejdå {name}");
                         ärSpeletPå = false;
-                        Environment.Exit(1);
+                        
                         break;
                     default:
                         Console.WriteLine("Invalid input");
-                        Environment.Exit(1);
                         break;
                 }
 

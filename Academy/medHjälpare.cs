@@ -57,5 +57,18 @@ namespace Academy
             Console.ReadLine();
 
         }
+
+        internal static string GetName()
+        {
+            Console.Write("Skriv in ditt namn:");
+            var name = Console.ReadLine();
+
+            while (string.IsNullOrEmpty(name))
+            {
+                Console.WriteLine("Namnet kan inte vara null, försök igen");
+                name = Console.ReadLine();
+            }
+            return name;
+        }
     }
 }

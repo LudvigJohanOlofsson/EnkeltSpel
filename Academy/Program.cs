@@ -11,14 +11,6 @@ var date = DateTime.UtcNow;
 
 var spel = new List<string>(); // lista obv
 
-string name = GetName();
+string name = medHjälpare.GetName();
 
 meny.visaMeny(name, date);
-
-
-string GetName()
-{
-    Console.Write("Skriv in ditt namn:");
-    var name = Console.ReadLine();
-    return name;
-}
