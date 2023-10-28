@@ -31,7 +31,7 @@ namespace Academy
             return result;
         }
 
-        internal static void LäggTillHistorik(int spelScore, string spelTyp)
+        internal static void LäggTillHistorik(int spelScore, SpelTyp spelTyp)
         {
             spel.Add(new Game
             {

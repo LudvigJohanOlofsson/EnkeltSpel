@@ -51,7 +51,7 @@ namespace Academy
                 Console.ReadLine();
             }
 
-            medHjälpare.LäggTillHistorik(score, "division");
+            medHjälpare.LäggTillHistorik(score, SpelTyp.Division);
 
         }
 
@@ -102,7 +102,7 @@ namespace Academy
                 Console.ReadLine();
             }
 
-            medHjälpare.LäggTillHistorik(score, "Multiplication");
+            medHjälpare.LäggTillHistorik(score, SpelTyp.Multiplication);
         }
 
         internal void SubtractionGame(string message)
@@ -153,7 +153,7 @@ namespace Academy
                 Console.ReadLine();
             }
 
-            medHjälpare.LäggTillHistorik(score, "Subtraction");
+            medHjälpare.LäggTillHistorik(score, SpelTyp.Subtraction);
         }
 
         internal void AdditionGame(string message)
@@ -203,7 +203,7 @@ namespace Academy
 
             }
 
-            medHjälpare.LäggTillHistorik(score, "Addition");
+            medHjälpare.LäggTillHistorik(score, SpelTyp.Addition);
 
         }
 

@@ -23,12 +23,17 @@ namespace Academy
                 Console.Clear();
                 Console.WriteLine($"Spelare: {name}");
                 Console.WriteLine($@"Vilket typ av spel vill du göra idag? Välj mellan valen nedanför:
-                V - Se tidigare spel
-                A - Addition
-                S - Subtraction
-                M - Multiplication
-                D - Division
-                Q - Avsluta");
+---Spel---
+A - Addition
+S - Subtraction
+M - Multiplication
+D - Division
+
+---Historik---
+V - Se tidigare spel
+
+---Avsluta---
+Q - Avsluta");
                 Console.WriteLine("-------------------------------------------------");
 
                 var gameSelected = Console.ReadLine();

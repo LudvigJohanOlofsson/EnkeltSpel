@@ -18,7 +18,7 @@ meny.visaMeny(name, date);
 
 string GetName()
 {
-    Console.Write("Skriv in ditt namn: ");
+    Console.Write("Skriv in ditt namn:");
     var name = Console.ReadLine();
     return name;
 }
